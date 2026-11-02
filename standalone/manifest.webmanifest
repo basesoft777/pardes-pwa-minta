@@ -1,0 +1,33 @@
+{
+  "name": "PaRDeS minta – standalone",
+  "short_name": "PaRDeS standalone",
+  "description": "Mini bibliaolvasó (1Móz 1, Károli) – a PaRDeS PWA-minta.",
+  "lang": "hu",
+  "id": "/pardes-pwa-minta/standalone/",
+  "start_url": "./?forras=pwa",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#faf8f3",
+  "theme_color": "#faf8f3",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
