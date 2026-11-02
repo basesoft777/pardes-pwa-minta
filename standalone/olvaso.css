@@ -27,3 +27,4 @@ p{margin:.7em 0}
 .allapot{font:.85rem var(--font-ui);color:var(--muted)}
 .lab{font:.8rem var(--font-ui);color:var(--muted);border-top:1px solid var(--rule);margin-top:2.5rem;padding-top:1rem}
 a{color:var(--accent)}
+[hidden]{display:none!important}

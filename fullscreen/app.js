@@ -6,6 +6,8 @@ document.getElementById('tema').onclick=function(){
  r.dataset.tema=dark?'light':'dark';try{localStorage.setItem(k,r.dataset.tema)}catch(e){}};
 var m=matchMedia('(display-mode: fullscreen)').matches?'fullscreen':matchMedia('(display-mode: standalone)').matches?'standalone':matchMedia('(display-mode: minimal-ui)').matches?'minimal-ui (kis böngészősáv)':(navigator.standalone?'standalone (iOS)':'böngészőlap');
 var a=document.getElementById('allapot');
+var tj=document.getElementById('teljes'),de=document.documentElement;
+if(de.requestFullscreen){tj.hidden=false;tj.onclick=function(){document.fullscreenElement?document.exitFullscreen():de.requestFullscreen()}}
 a.textContent='Futási mód: '+m+' · '+(navigator.onLine?'online':'offline');
 if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js').then(function(){a.textContent+=' · offline gyorsítótár kész'}).catch(function(){a.textContent+=' · service worker nem elérhető'})}
 })();
