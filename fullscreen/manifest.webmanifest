@@ -7,6 +7,10 @@
   "start_url": "./?forras=pwa",
   "scope": "./",
   "display": "fullscreen",
+  "display_override": [
+    "fullscreen",
+    "standalone"
+  ],
   "orientation": "portrait",
   "background_color": "#faf8f3",
   "theme_color": "#faf8f3",
